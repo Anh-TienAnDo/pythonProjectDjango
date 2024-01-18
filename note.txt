@@ -8,12 +8,13 @@ tutorial-env\\Scripts\\activate.bat
 ---------------------------------------
 django-admin startproject webDjango - tạo dự án
 cd webDjango - chuyển thư mục làm việc
-python manage.py migrate - tạo database
+python manage.py migrate - tạo database, update
 python manage.py runserver 8888 - chạy server
 click ip -> http://127.0.0.1:8888/admin
 enter: ctrl + break - thoát server
 python manage.py createsuperuser - tạo user để đăng nhập
 gõ user là anhgdt, email là lea81807@gmail.com, password: Song3goc
+python manage.py startapp home - tạo 1 module tên home
 
 
 
