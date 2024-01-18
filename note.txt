@@ -1,0 +1,20 @@
+Để xóa tất cả các thư viện Python bạn đã cài đặt bằng pip và chỉ giữ lại các thư viện mặc định, bạn có thể sử dụng một môi trường ảo (virtual environment). Dưới đây là các bước bạn có thể thực hiện:
+
+Tạo một môi trường ảo mới. Đầu tiên, chọn một thư mục, sau đó mở terminal và nhập lệnh sau1:
+python3 -m venv tutorial-env
+
+Kích hoạt môi trường ảo. Trên Windows, bạn có thể sử dụng lệnh sau1:
+tutorial-env\\Scripts\\activate.bat
+---------------------------------------
+django-admin startproject webDjango - tạo dự án
+cd webDjango - chuyển thư mục làm việc
+python manage.py migrate - tạo database
+python manage.py runserver 8888 - chạy server
+click ip -> http://127.0.0.1:8888/admin
+enter: ctrl + break - thoát server
+python manage.py createsuperuser - tạo user để đăng nhập
+gõ user là anhgdt, email là lea81807@gmail.com, password: Song3goc
+
+
+
+
