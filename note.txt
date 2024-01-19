@@ -7,6 +7,11 @@ Kích hoạt môi trường ảo. Trên Windows, bạn có thể sử dụng l�
 tutorial-env\\Scripts\\activate.bat
 ---------------------------------------
 file settings.py: thêm các module của app
+AltEnter - Hiển thị hành động theo ngữ cảnh
+Ctrl E - Xem các tập tin gần đây
+Alt F7 - Tìm cách sử dụng. Hiển thị tất cả các vị trí sử dụng thành phần mã trong dự án của bạn
+
+
 
 ----------------------------------
 django-admin startproject webDjango - tạo dự án
