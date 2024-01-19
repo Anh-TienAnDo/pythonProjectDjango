@@ -6,6 +6,9 @@ python3 -m venv tutorial-env
 Kích hoạt môi trường ảo. Trên Windows, bạn có thể sử dụng lệnh sau1:
 tutorial-env\\Scripts\\activate.bat
 ---------------------------------------
+file settings.py: thêm các module của app
+
+----------------------------------
 django-admin startproject webDjango - tạo dự án
 cd webDjango - chuyển thư mục làm việc
 python manage.py migrate - tạo database, update
@@ -15,6 +18,7 @@ enter: ctrl + break - thoát server
 python manage.py createsuperuser - tạo user để đăng nhập
 gõ user là anhgdt, email là lea81807@gmail.com, password: Song3goc
 python manage.py startapp home - tạo 1 module tên home
+pip install pymysql -> create database trong mysql
 
 
 
