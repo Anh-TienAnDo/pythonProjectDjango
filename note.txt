@@ -24,6 +24,8 @@ python manage.py createsuperuser - tạo user để đăng nhập
 gõ user là anhgdt, email là lea81807@gmail.com, password: Song3goc
 python manage.py startapp home - tạo 1 module tên home
 pip install pymysql -> create database trong mysql
+pip3 install mysql-connector-python
+pip install mysql
 
 
 
