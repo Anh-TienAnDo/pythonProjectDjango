@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import *
 
 # Create your views here.
 def Home(req):
-    content = {}
+    products = Product.objects.all()
+    content = {'products': products}
     return render(req, 'app/home.html', content)
 
 def Cart(req):
