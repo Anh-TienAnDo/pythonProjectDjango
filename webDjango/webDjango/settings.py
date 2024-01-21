@@ -86,8 +86,8 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "webdjango",
         "USER": "root",
-        # "PASSWORD": "anhgdt1710",
-        "PASSWORD": "anh1710gdt",
+        "PASSWORD": "anhgdt1710",
+        # "PASSWORD": "anh1710gdt",
         "HOST": "127.0.0.1",
         "PORT": "3306",
     }

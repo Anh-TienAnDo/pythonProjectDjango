@@ -26,6 +26,7 @@ python manage.py startapp home - tạo 1 module tên home
 pip install pymysql -> create database trong mysql
 pip3 install mysql-connector-python
 pip install mysql
+python manage.py makemigrations - tạo db từ class entity
 
 
 
