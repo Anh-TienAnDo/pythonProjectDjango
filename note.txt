@@ -17,7 +17,7 @@ Alt F7 - Tìm cách sử dụng. Hiển thị tất cả các vị trí sử d�
 django-admin startproject webDjango - tạo dự án
 cd webDjango - chuyển thư mục làm việc
 python manage.py migrate - tạo database, update
-python manage.py runserver 8888 - chạy server
+python manage.py runserver 9999 - chạy server
 click ip -> http://127.0.0.1:8888/admin
 enter: ctrl + break - thoát server
 python manage.py createsuperuser - tạo user để đăng nhập
@@ -26,7 +26,7 @@ python manage.py startapp home - tạo 1 module tên home
 pip install pymysql -> create database trong mysql
 pip3 install mysql-connector-python
 pip install mysql
-python manage.py makemigrations - tạo db từ class entity
+python manage.py makemigrations - tạo/thêm/sửa db từ class entity
 
 
 
