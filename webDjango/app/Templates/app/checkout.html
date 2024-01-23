@@ -3,7 +3,7 @@
 {% block content-checkout %}
 
 <div class="row">
-	<div class="col-lg-6">
+	<div class="col-lg-4">
 		<div class="box-element" id="form-wrapper">
 
 			<form id="form">
@@ -49,26 +49,31 @@
 
 	</div>
 
-	<div class="col-lg-6">
+	<div class="col-lg-8">
 		<div class="box-element">
 			<a class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; Back to Cart</a>
 			<hr>
 			<h3>Order Summary</h3>
 			<hr>
+			{% for item in items %}
 			<div class="cart-row">
-				<div style="flex:2"><img class="row-image" src="{% static 'app/images/placeholder.png' %}"></div>
+				<div style="flex:1"><img class="row-image" src="{{item.product.imageURL}}"></div>
 				<div style="flex:2">
-					<p>Product 1</p>
+					<p>{{item.product.name}}</p>
+				</div>
+				<div style="flex:2">
+					<p>{{item.product.price}} VND</p>
 				</div>
 				<div style="flex:1">
-					<p>$20.00</p>
+					<p>x{{item.quantity}}</p>
 				</div>
-				<div style="flex:1">
-					<p>x2</p>
+				<div style="flex:2">
+					<p>{{item.getTotal}} VND</p>
 				</div>
 			</div>
-			<h5>Items: 2</h5>
-			<h5>Total: $4</h5>
+			{% endfor %}
+			<h5>Items: {{order.getTotalItems}}</h5>
+			<h5>Total: {{order.getTotalPrice}}</h5>
 		</div>
 	</div>
 </div>

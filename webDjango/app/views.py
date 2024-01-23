@@ -9,11 +9,23 @@ def Home(req):
     return render(req, 'app/home.html', content)
 
 def Cart(req):
-    content = {}
+    if req.user.is_authenticated:
+        customer = req.user.customer
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        items = order.orderitem_set.all()
+    else:
+        item=[]
+    content = {'items': items, 'order': order}
     return render(req, 'app/cart.html', content)
 
 def Checkout(req):
-    content = {}
+    if req.user.is_authenticated:
+        customer = req.user.customer
+        order, created = Order.objects.get_or_create(customer=customer, complete=False)
+        items = order.orderitem_set.all()
+    else:
+        item = []
+    content = {'items': items, 'order': order}
     return render(req, 'app/checkout.html', content)
 
 def Login(req):
